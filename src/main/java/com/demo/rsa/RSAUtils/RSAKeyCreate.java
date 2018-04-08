@@ -6,6 +6,11 @@ import java.security.*;
 
 public class RSAKeyCreate {
 
+    /*
+    *第一步：创建公钥，私钥
+    *公钥用于加密
+    *私钥用于解密
+    */
     public static void createKeyPairs() {
         try {
             Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
@@ -26,6 +31,8 @@ public class RSAKeyCreate {
         }
 
     }
+    
+    //执行
     public static void main(String args[]){
         createKeyPairs();
     }
