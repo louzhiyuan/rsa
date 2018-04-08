@@ -35,13 +35,7 @@ public class descryptData {
             * strprivk
             *
             * */
-            String strprivk = "MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEA4J7Iv18SSmMNJYt" +
-                    "S73IB+kw/MzrH6r5gs/JG+E1l76pOpYtC8N4s7jtVfPMGKqwpOOX3SRkxaTKQEX3CErk5yQID" +
-                    "AQABAkEAt0hZPe5xmkkgnRYGYmOAwaAdocvA/QbDGZID3vAo0Vl6wfgX1orhfeK8IbzC47Zn4" +
-                    "WanZzLpN5D756zGRVC9QQIhAPYmfHJAMTpFPHVuVcCuuhqHtT8D47KiWElMxDj5JFDVAiEA6Zu" +
-                    "/jLzXV9au+hP4wuMh0P7nL0VolQjxlUGSTz3Q3yUCIQCeg5JIkQYinEue4/rdJqg6RYJ2ni6X7" +
-                    "uwj6AfFGMxGMQIgHSIEQFvoixbF2YAWHM/QjszLLfT89uEXp6J2yZUO8FUCIQCvaslJCd6lnie" +
-                    "fP5yTu05fXfPGCD5/G4iC2ROapdDqgA==";
+            String strprivk = "";
 
             PKCS8EncodedKeySpec priPKCS8 = new PKCS8EncodedKeySpec(Base64.decodeBase64(strprivk.getBytes()));
 
