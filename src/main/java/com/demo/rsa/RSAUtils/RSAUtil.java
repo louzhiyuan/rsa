@@ -6,6 +6,7 @@ import javax.crypto.Cipher;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
+//工具类
 public class RSAUtil {
 
 
