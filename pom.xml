@@ -36,6 +36,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--RSA加密所需的两个jar包-->
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk16</artifactId>
