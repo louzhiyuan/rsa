@@ -50,7 +50,6 @@ public class descryptData {
             /*
             * 加密后字符串
             * encryptData
-            *
             * */
             String encryptData = "Mf28x7u4oXbTNcJiDwgtgOPAbown80YZDC5OT4OlGfhpSHSRnVU4j0xijzyBDHAQxlkz+mybnfllwZ9bod7GRQ==";
 
