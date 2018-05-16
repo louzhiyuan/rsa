@@ -1,7 +1,6 @@
 package com.demo.rsa.RSAUtils;
 
 import org.apache.commons.codec.binary.Base64;
-
 import javax.crypto.Cipher;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
@@ -59,6 +58,12 @@ public class descryptData {
              *
              * */
             //String encryptData = "uUfkKh+1cxLkG9g9kxHZPCqLoTP7xBrz1Y0RTNM0t1d7TH36H9l+4NjgQp78yjCSWjW2/yzfohFneMg9violQQ==";
+            /*
+            * 加密后字符串
+            * encryptData
+            * */
+            //String encryptData = "Mf28x7u4oXbTNcJiDwgtgOPAbown80YZDC5OT4OlGfhpSHSRnVU4j0xijzyBDHAQxlkz+mybnfllwZ9bod7GRQ==";
+
 
             //批量解密
             String[] encryptData = {
@@ -86,4 +91,7 @@ public class descryptData {
     public static void main(String args[]) {
         testRsa();
     }
+    /*
+    *解密后结果:0---不一致;1---一致;2---身份证号码有误;
+    */
 }
