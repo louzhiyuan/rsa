@@ -58,13 +58,7 @@ public class descryptData {
              *
              * */
             //String encryptData = "uUfkKh+1cxLkG9g9kxHZPCqLoTP7xBrz1Y0RTNM0t1d7TH36H9l+4NjgQp78yjCSWjW2/yzfohFneMg9violQQ==";
-            /*
-            * 加密后字符串
-            * encryptData
-            * */
-            //String encryptData = "Mf28x7u4oXbTNcJiDwgtgOPAbown80YZDC5OT4OlGfhpSHSRnVU4j0xijzyBDHAQxlkz+mybnfllwZ9bod7GRQ==";
-
-
+           
             //批量解密
             String[] encryptData = {
                     "djz4N8iE2P8tu8w5uRAsjvZIqIAHmTwTVESgBIlDvmq4ORHRT1nugjWI/Tqhwm31jdPKRNvwL7QlW4WjZE8yMg==",
@@ -77,11 +71,7 @@ public class descryptData {
                     System.out.println("解密后结果:" + descryptData);
                 }
             }
-                    /*String descryptData = null;
-            if (privKey != null && (encryptData != null && !encryptData.equals(""))) {
-                descryptData = decryptDatas(encryptData, privKey);
-                System.out.println("解密后结果:" + descryptData);
-            }*/
+               
         }catch (Exception e) {
             e.printStackTrace();
         }
