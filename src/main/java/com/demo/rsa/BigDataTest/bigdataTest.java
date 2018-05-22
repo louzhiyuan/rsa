@@ -15,7 +15,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testdata {
+public class bigdataTest {
 
     //数据宝：
     public static String phoneValidate(String idcard, String name, String mobile){

@@ -1,11 +1,14 @@
 package com.demo.rsa.RSAUtils;
 
+import com.demo.rsa.BigDataTest.MD5Utils;
 import org.apache.commons.codec.binary.Base64;
 import javax.crypto.Cipher;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.Security;
 import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
@@ -87,9 +90,63 @@ public class descryptData {
         }
     }
 
+
+    //md5批量加密
+    public static  void testmd5(){
+        String [] datas = {
+                "441424198703083810",
+                "61012419830111181X"
+        };
+        for(int i=0;i<datas.length;i++){
+            String s = MD5Utils.MD5(datas[i]);
+            System.out.println(s);
+        }
+    }
+
+    //运营商
+    public static void yys(){
+
+        String [] datas = {
+                "18666096718",
+                "15889685430"
+        };
+        for(int i=0;i<datas.length;i++){
+            //运营商匹配
+            String YDregex = "(^1(3[4-9]|4[7]|5[0-27-9]|7[28]|8[2-478])\\d{8}$)|(^1(70[56]|34[0-8])|303\\d{7}$)";
+            Pattern yd = Pattern.compile(YDregex);
+            Matcher ydm = yd.matcher(datas[i]);
+            boolean ydmatch = ydm.matches();
+            if(ydmatch){
+                System.out.println("移动");
+            }
+
+            String DXregex = "(^1(33|53|77|8[019]|49|73|99|)\\d{8}$)|(^1(70[012]|349)\\d{7}$)";
+            Pattern dx = Pattern.compile(DXregex);
+            Matcher dxm = dx.matcher(datas[i]);
+            boolean dxmatch = dxm.matches();
+            if(dxmatch){
+                System.out.println("电信");
+            }
+
+            String LTregex = "(^1(3[0-2]|4[5]|5[56]|7[56]|8[56]|6[6])\\d{8}$)|(^1(70[4789]|71[356789])\\d{7}$)";
+            Pattern lt = Pattern.compile(LTregex);
+            Matcher ltm = lt.matcher(datas[i]);
+            boolean ltmatch = ltm.matches();
+            if(ltmatch){
+                System.out.println("联通");
+            }
+        }
+    }
+
+
     //运行
     public static void main(String args[]) {
-        testRsa();
+        //批量解密RSA
+        //testRsa();
+        //md5
+        //testmd5();
+        //运营商
+        yys();
     }
     /*
     *解密后结果:0---不一致;1---一致;2---身份证号码有误;
