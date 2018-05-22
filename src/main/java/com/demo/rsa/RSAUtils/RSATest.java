@@ -151,17 +151,7 @@ public class RSATest {
                     System.out.println(encryptData);
                 }
             }
-            //System.out.println("加密前字符串:" + data);
-            /*String encryptData = null;
-            if (pubKey != null && (data != null && !data.equals(""))) {
-                encryptData = rsaUtil.encryptData(data, pubKey);
-                System.out.println("加密后字符串:" + encryptData);
-            }*/
-            /*String descryptData = null;
-            if (privKey != null) {
-                descryptData = rsaUtil.decryptData(encryptData, privKey);
-                System.out.println("解密后字符串:" + descryptData);
-            }*/
+           
         }catch (Exception e) {
             e.printStackTrace();
         }
