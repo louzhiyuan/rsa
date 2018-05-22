@@ -36,7 +36,6 @@ public class RSAKeyCreate {
     public static void main(String args[]){
         createKeyPairs();
     }
-
     /*
     公钥Base64编码:
     MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKo7x+FfFw90b7izTpSZTcyHLjWPC6N5
