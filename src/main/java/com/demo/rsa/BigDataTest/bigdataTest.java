@@ -62,7 +62,6 @@ public class bigdataTest {
         return result;
     }
 
-
     //批量测试接口脚本
     //测试时摘除4190 HUWEI
     public static void main(String[] args) throws Exception {
